@@ -1,0 +1,33 @@
+\documentclass[sigconf]{acmart}
+
+% Setup packages
+\usepackage{booktabs}
+\usepackage{graphicx}
+\usepackage{multicol}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{fancyhdr}
+\usepackage{float}
+
+
+% Format (removes footnote)
+\settopmatter{printacmref=false}
+\renewcommand\footnotetextcopyrightpermission[1]{} 
+
+% Set the path for media
+\graphicspath{ {media/} } 
+\pagenumbering{arabic}
+
+\begin{document}
+
+\include{meta/metadata}
+
+\maketitle
+
+% Chapters
+\input{chapters/proposal.tex} 
+
+% Reference format
+\bibliographystyle{ACM-Reference-Format}
+
+\end{document}
