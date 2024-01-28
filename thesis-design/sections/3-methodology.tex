@@ -1,4 +1,31 @@
 \section{Methodology}
-\label{sec:methodology}
-% Focus on what you add to the existing method. Explain what you will do and why (and how). Do not forget to characterize your research design. There should be an evaluation plan in this section. (For DS students, this normally means using manually labelled or ground truth data.)
-Write about your methodology here. Focus on your own contribution. Indicate exactly how you will assess your work in terms of evaluation.
+
+Focus of the methdology is a combination of in-the-wild studies to study user behaviour and space usage and combine it with data gathered from using IoT devices on which both data cleaning, transformation and analysis are performe. In the end a prototype of a persuasive technology will be manufactured and usability tested to see possible change in user behaviour pre-installation and post-installation.
+
+\subsection{User studies}
+
+Gather information about users within the building. There emotional state. Most likely these will be surveys handout throughout the thesis projects. Potential one-one interviews will be conducted with more open ended questions (open field questionnaire) about further comfort levels of specific users. This includes methods such as creating \emph{personas, empathy maps} and gives an overview of user needs and current behaviour of users within the building. This will most likely also include analysis of surveys using Python and Jupyter notebooks \footnote{https://jupyter.org/} (e.g. data cleaning, sentiment analysis).
+
+\subsection{Space behaviour}
+
+With sensing devices scattered throughout the Lab42 building. This will most likely also involve data analysis, cleaning and transforming using Python and Jupyter notebooks. This includes methods such as \emph{field trails, customer journeys and observation}.
+
+\subsection{Prototyping}
+
+This includes methods such as creating \emph{ideation, proof of concept and provocative prototyping} to create a design solution for behaviour change and persuasive technology which can be further tested. Usability testing and data analysis of the prototype can be comparative and gives insight in how well user behaviour changes pre-installation and post-installation. Prototyping will most likely consists of three components related to the design challenge: 
+
+\textbf{1) Sensing device using a microcontroller (Ubicomp): } sensory data that will measure specific user behaviour in a couple of spaces throughout the building. \\
+\textbf{2) Storage with Realtime API (Back-end): } to store the data for persisent storage in a back-end and display visualizations in a front-end dashboard for furhter use. \\
+\textbf{3) Tangible visualization (Ambient display): } some sort of physical tangible data visualization collectively showing the output of the sensory data with the goal of changing behaviour.
+
+\subsection{Existing datasets}
+
+There is also existing data about the lab building. The building itself has a spreadsheet of all data collected which has building data about:
+
+\begin{itemize}
+  \item Sound measurement
+  \item Building temperature
+  \item Occupancy
+\end{itemize}
+
+Next to generic building data gather by the building sensors previous studies on the Lab42 performed are a study by Master Student Jan Ramdohr who created a sensig device to get some specific device measurement data \cite{sensing}. Also a specific survey about users emotion is performed by PhD candidate Shruti Rao and questions were asked pertaining to comfort and emotions across various spaces in the building \cite{emotion}.
