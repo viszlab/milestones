@@ -2,21 +2,30 @@
 
 Focus of the methdology is a combination of in-the-wild studies to study user behaviour and space usage and combine it with data gathered from using IoT devices on which both data cleaning, transformation and analysis are performe. In the end a prototype of a persuasive technology will be manufactured and usability tested to see possible change in user behaviour pre-installation and post-installation.
 
-\subsection{User studies}
+\subsection{User studies (elicitation study)}
 
-Gather information about users within the building. There emotional state. Most likely these will be surveys handout throughout the thesis projects. Potential one-one interviews will be conducted with more open ended questions (open field questionnaire) about further comfort levels of specific users. This includes methods such as creating \emph{personas, empathy maps} and gives an overview of user needs and current behaviour of users within the building. This will most likely also include analysis of surveys using Python and Jupyter notebooks \footnote{https://jupyter.org/} (e.g. data cleaning, sentiment analysis).
+Gather information about users within the building. There emotional state. Most likely these will be surveys handout throughout the thesis projects. Potential one-one interviews will be conducted with more open ended questions (open field questionnaire) about further comfort levels of specific users. This includes methods such as creating \emph{personas, empathy maps,  MoSCoW} and gives an overview of user needs and current behaviour of users within the building. These findings will be evaluated based on:
+
+\begin{itemize}
+  \item What are intentions of students entering the building?
+\end{itemize}
 
 \subsection{Space behaviour}
 
-With sensing devices scattered throughout the Lab42 building. This will most likely also involve data analysis, cleaning and transforming using Python and Jupyter notebooks. This includes methods such as \emph{field trails, customer journeys and observation}.
+With sensing devices scattered throughout the Lab42 building. This includes methods such as \emph{field trails, customer journeys and observation}. These findings will be evaluated based on:
+
+\begin{itemize}
+  \item What is current space usage within the building?
+\end{itemize}
 
 \subsection{Prototyping}
 
-This includes methods such as creating \emph{ideation, proof of concept and provocative prototyping} to create a design solution for behaviour change and persuasive technology which can be further tested. Usability testing and data analysis of the prototype can be comparative and gives insight in how well user behaviour changes pre-installation and post-installation. Prototyping will most likely consists of three components related to the design challenge: 
+This includes methods such as creating \emph{ideation, proof of concept, requirements list and provocative prototyping} to create a design solution for behaviour change and persuasive technology which can be further tested. Usability testing and data analysis of the prototype can be comparative and gives insight in how well user behaviour changes pre-installation and post-installation. Prototyping will most likely consists of three components related to the design challenge: 
 
-\textbf{1) Sensing device using a microcontroller (Ubicomp): } sensory data that will measure specific user behaviour in a couple of spaces throughout the building. \\
-\textbf{2) Storage with Realtime API (Back-end): } to store the data for persisent storage in a back-end and display visualizations in a front-end dashboard for furhter use. \\
-\textbf{3) Tangible visualization (Ambient display): } some sort of physical tangible data visualization collectively showing the output of the sensory data with the goal of changing behaviour.
+\textbf{1) Sensing device using a microcontroller (Ubicomp): } sensory data that will measure specific user behaviour in a couple of spaces throughout the building. Most likely created using the ESP32 platform \footnote{https://www.espressif.com/en/products/socs/esp32} \\
+\textbf{2) Storage with Realtime API (Back-end): } to store the data for persisent storage in a back-end and display visualizations in a front-end dashboard for furhter use. Most likely created with a front-end framework such as Svelte \footnote{https://svelte.dev/} and the GraphQL query language \footnote{https://graphql.org/}.\\
+\textbf{3) Tangible visualization (Ambient display): } some sort of physical tangible data visualization collectively showing the output of the sensory data with the goal of changing behaviour most likely created using the Raspberry Pi \footnote{https://www.raspberrypi.org/} or Ardunio \footnote{https://www.arduino.cc/} platform and visualization will be created using Processing \footnote{https://processing.org/}.
+
 
 \subsection{Existing datasets}
 
@@ -28,4 +37,19 @@ There is also existing data about the lab building. The building itself has a sp
   \item Occupancy
 \end{itemize}
 
-Next to generic building data gather by the building sensors previous studies on the Lab42 performed are a study by Master Student Jan Ramdohr who created a sensig device to get some specific device measurement data \cite{sensing}. Also a specific survey about users emotion is performed by PhD candidate Shruti Rao and questions were asked pertaining to comfort and emotions across various spaces in the building \cite{emotion}.
+Next to generic building data gather by the building sensors previous studies on the Lab42 performed are a study by Master Student Jan Ramdohr who created a sensig device to get some specific device measurement data \cite{sensing}. Also a specific survey about users emotion is performed by PhD candidate Shruti Rao and questions were asked pertaining to comfort and emotions across various spaces in the building \cite{emotion}. These findings will be evaluated based on:
+
+\begin{itemize}
+  \item What paramters are used to adjust the temperature?
+  \item Do outside conditions influence the time spent indoor?
+\end{itemize}
+
+\section{Research outputs}
+
+\subsection{Data collection and analysis}
+
+As outlined in the methodology section first user studies on space needs to be performed which produce data which will be analyzed as part of the research. This data will be processed using python and jupyper to be cleaned, transformed and mostly to gain interesting insights in space behavior. This will most likely also include analysis of surveys using Python and Jupyter notebooks \footnote{https://jupyter.org/} (e.g. data cleaning, sentiment analysis) and visualization of the data in graphs using visualization libraries such as Seaborn \footnote{https://seaborn.pydata.org/}.
+
+\subsection{Prototype evaluation}
+
+The evaluation group will be handed out questionnaires, which will ask the same questions about the visualizations, aiming to get an insight into the perception of the visualizations. The experiment will aim at finding out wether the installation post and pre-installation has any significant effect on changing user behaviour.
