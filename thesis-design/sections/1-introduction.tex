@@ -1,33 +1,34 @@
 \section{Introduction}
+In response to the increase in student enrollments and their evolving needs, universities are transforming campus buildings into informal learning spaces to encourage students to spend more time on campus. This transformation is facilitated, in part, by the growing integration of sensors and automated systems within buildings. These technologies aim to regulate comfort in a multi-dimensional approach encapsulated in thermal, respiratory, visual, and acoustic dimensions.
 
-As universities respond to the evolving needs of students, a transformation is underway in the restructuring of spaces. This redefines University buildings as informal learning spaces encouraging students to spend more time on campus. One aspect is the increasing use of sensors and automated systems that are equiped within buildings to regulate comfort in a multi-dimensional approach encapsulated in thermal, respiratory, visual, and acoustic dimensions.
+However, the prevailing approach of retrofitting sensors onto existing buildings leaves students with a perceived lack of control and are often expected to conform to the building rather than experiencing spaces that adapt to their needs. This creates an interplay between students' needs and requirements, built environments, and computing technologies.
 
-However, the prevailing approach of retrofitting sensors onto existing buildings leaves students with a perceived lack of control and engagement, as students are expected to adapt to the building rather than the other way around. This creates an interplay between user needs, built environments, and computing technologies.
-
-Recognizing the evolving needs of students this thesis will research the intersection between user behaviour, persuasive technology and ubiquitous computing to enhance informal learning spaces by the integration of pervasive sensing to enhance students awareness about their surroundings for optimal learning activity. 
+This thesis focuses on understanding user behavior and needs through in-the-wild studies and prototyping of various ubiquitous computing devices and the evaluation of their effectiveness with the overall goal of gathering insights into students' needs, to enhance their learning spaces and move towards adaptive smart buildings.
 
 \subsection{Research questions}
 
-In order to achieve this, the following main research question is formulated: \\
+In order to research the enhancement of informal learning spaces through ubiquitous computing:  the following main research question is formulated: \\
 
-\emph{How can persuasive technology combining user data and ubiquitous computing design impact user behavior to significantly enhance the quality of informal learning spaces to facilitate an optimal learning environment?} \\
+\emph{How can ubiquitous computing impact student behavior to significantly enhance the quality of informal learning spaces and facilitate an optimal learning environment?} \\
 
-To be able to answer this research question the following supporting sub-questions, which also act as objectives to describe which knowledge needs to be acquired to be able to answer the main reserach question, are formulated:
+To effectively answer this main research question, this research is guided by the following supporting sub-questions that also serve as objectives to delineate the necessary knowledge: \\
 
 \begin{itemize}
-    \item \textbf{RQ1:} \emph{What are the characteristics, intentions and goals of the users entering the building? (descriptive)}
-    \item \textbf{RQ2:} \emph{How do users of the building currently define and rate their personal comfort in relation to the building? (defining)}
-    \item \textbf{RQ3:} \emph{What sensory data about users and the environment is currently being collected in the building and can this be enhanced? (defining)}
-    \item \textbf{RQ4:} \emph{How can a ubiquitous computing device (persuasive technology) nudge users into certain desired behavior? (designing)}
-    \item \textbf{RQ5:} \emph{Is there a difference in user-behaviour pre-installation and post-installation of the device?}
+    \item \textbf{RQ1:} \emph{What are the characteristics, intentions, and goals of the students entering the building? }
+    \item \textbf{RQ2:} \emph{How do students of the building currently define and rate their comfort concerning subjective parameters of the building? }
+    \item \textbf{RQ3:} \emph{What sensory data about students and the environment is currently being collected and should this be enhanced? }
+    \item \textbf{RQ4:} \emph{How can ubiquitous computing devices nudge students into certain desired behavior? }
+    \item \textbf{RQ5:} \emph{Is there a difference in user behavior pre-installation and post-installation of the computing devices? }\\
 \end{itemize}
 
-As outlined further in the \emph{related work} section research has been done on smart buildings, the field of ubiquitous computing and sensory data has also seen a lot of research especially with the advancement of low-cost hardware components. Less research has been done to give a definition comfort within indoor buildings and many of this research is limited to gathering data and analyzing but not much research is performed on actually measuring user behaviour and if with ambient devices users can be nudged or pushed to take preventive action and if components within a building can be adapter to and change behaviour especially within the niche and focus of this case study; students as a focus group in the context of informal learning environments.
+As outlined in the \emph{related work} existing research has explored human-building interaction, the field of persuasive technology, data physicalization, and informal learning spaces. While research on defining comfort within indoor buildings and gathering and analyzing sensory data is prevalent, there is a gap in understanding user behavior and their subjective needs. Moreover, limited research exists on how design solutions can empower users, providing them with control and enabling spaces (including buildings in general) to adapt to user needs.
 
 \subsection{Problem statement}
 
-Buildings are more and more getting equiped with sensors and automated systems that regulate based on general parameters set by policymembers and administrative staff. Users within buildings have limited control to make adjust in terms of their comfort. In short: \emph{the building must adapt to the user instead of the user adapting to the building.} This research specifically helps to efficiently arrange the Lab-42 building and helps faculty staff to make decisions on how to optimally arrange spaces but in general can inform architecture and builders to optimize further university buildings with a focus on informal learning spaces.
+Modern campus buildings (e.g. Lab42) are increasingly equipped with sensors and automated systems to regulate occupants' comforts, governed by parameters established through generic building policies and faculty staff Unfortunately, students in these buildings often encounter limitations in exerting personal control over their comfort and data gathered by these systems is invisible to the user and choices the system makes are not transparent.
+
+This adaptation implies that buildings should embody empathy \cite{empathic} and be adaptive (e.g. responsive to human signals such as emotions) with a focus on fostering user interaction with the environment. Researching to understand students' subjective needs, experiences, and behavior, coupled with a human-centric design approach, has the potential to elevate occupants' well-being and create optimal learning spaces. Furthermore, it provides valuable insights to faculty staff in making decisions to optimally arrange learning spaces and inform architecture and interior design studios on making decisions about structuring spaces and integrating computing technologies within built environments.
 
 \subsection{Lab42 building}
 
-This research will be performed in association with the \emph{Digital Interactions Lab} and uses the recently (september 2022) opened Lab42 \footnote{https://lab42.uva.nl/} building at the UvA Amsterdam Science Park as a case study. Lab42 is a energy-neutral, flexible and adaptable designed faculty building that facilites partnerships between students, researchers and businesses. \cite{crouwel} The layout aims to feature different zones with varying functionalities, from areas where you can sit quietly and focus on work to spaces that allows for collaborative work. The overarching interior theme in the design is 'tech' and 'nature' aiming to create afresh, light and warm comfortable building. Sensing devices are installed throughout the building to automatically adjust lighting, air, temperature so these can be adjusted for overall improvement of comfort \cite{faculty}.
+This study will be conducted in association with the Digital Interactions Lab \footnote{https://uva-dilab.com/} and will utilize the recently opened Lab42 \footnote{https://lab42.uva.nl/} building at the UvA Amsterdam Science Park \footnote{https://www.amsterdamsciencepark.nl/} as its primary case study. Lab42 is an energy-neutral, flexible, and adaptable faculty building that facilitates collaborations among students, researchers, and businesses \cite{crouwel}. The buildings's layout is strategically organized into different zones, each serving various functions, ranging from quiet individual work to spaces that allow for collaborative work. The overarching interior theme in the design revolves around 'tech' and 'nature' aiming to cultivate a fresh, light, and warm comfortable ambiance. Sensing devices are installed throughout the building to automatically adjust lighting, air, and temperature \cite{faculty}.
