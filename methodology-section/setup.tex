@@ -1,0 +1,55 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% setup.tex
+% Main tex file for setup and content collocation
+% For the use of University of Amsterdam
+% Information Systems and Data Science students
+% Adapted by Riccardo Fiorista (riccardo.fiorista@proton.me)
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[nolinenumbering]{thesisdesign}
+
+\usepackage{float}
+\usepackage{caption}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% DOCUMENT METADATA
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\input{metadata/title.tex}
+\input{metadata/author.tex}
+\input{metadata/supervisor.tex} 
+\input{metadata/abstract.tex}
+\input{metadata/keywords.tex}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% CONTENT
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+
+\pagestyle{plain}
+\fixemptypage
+
+\pagestyle{fancy}
+\fancyhead[LE, LO]{\emph{A breath of fresh air: towards optimal Indoor Air Quality (IAQ)}}
+\fancyhead[RO, RE]{\emph{D. de Vries}}
+\fancyfoot[R]{\thepage}
+\setlength{\footskip}{10mm}
+
+\graphicspath{{media/}} 
+
+\maketitle
+\input{metadata/data.tex}
+\input{sections/1-introduction.tex}
+\input{sections/2-methodology.tex}
+
+\bibliographystyle{ACM-Reference-Format}
+\bibliography{references}
+
+% Appendix
+\newpage
+\input{sections/3-appendix.tex}
+
+\end{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
