@@ -23,6 +23,7 @@ $ git clone git@github.com:viszlab/milestones.git
 ```
 ├── .vscode                 # LaTeX workshop configuration files
 ├── cost-breakdown          # BOM of the materials for declaration
+├── peer-reviews            # Reviews and feedback of milestones
 ├── data-collection         # Overview of data gathered by devices
 ├── ethics-application      # User studies application for ECIS
 ├── project-proposal        # Submitting the project in datanose
